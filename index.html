@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RefixLab - Get 1800 AI Credits + 300 Daily</title>
+    <meta name="description" content="Sign up for RefixLab and get 1800 AI credits instantly plus 300 daily credits. Download free ebooks and audiobooks.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Global Styles */
+        :root {
+            --primary: #4A6CF7;
+            --primary-dark: #3a56d4;
+            --secondary: #6C63FF;
+            --dark: #1E2A47;
+            --light: #F8FAFF;
+            --gray: #6B7280;
+            --success: #10B981;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7ff;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 16px;
+        }
+        
+        .btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(74, 108, 247, 0.3);
+        }
+        
+        .btn-secondary {
+            background: var(--secondary);
+        }
+        
+        .btn-secondary:hover {
+            background: #5b53e6;
+            box-shadow: 0 10px 20px rgba(108, 99, 255, 0.3);
+        }
+        
+        .section {
+            padding: 80px 0;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        /* Header Styles */
+        header {
+            background: white;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        
+        .mobile-menu {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #f5f7ff 0%, #e6eeff 100%);
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .hero-text {
+            flex: 1;
+            padding-right: 50px;
+        }
+        
+        .hero-image {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+        
+        .hero h1 span {
+            color: var(--primary);
+        }
+        
+        .hero p {
+            font-size: 18px;
+            color: var(--gray);
+            margin-bottom: 30px;
+            max-width: 500px;
+        }
+        
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Features Section */
+        .features {
+            background: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .section-title h2 {
+            font-size: 36px;
+            color: var(--dark);
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background: var(--light);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s;
+            border: 1px solid #eef2f6;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            font-size: 48px;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .feature-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+        
+        /* Signup Section */
+        .signup {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            border-radius: 20px;
+            padding: 60px;
+            margin: 80px 0;
+            box-shadow: 0 20px 40px rgba(74, 108, 247, 0.3);
+        }
+        
+        .signup-content {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .signup h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+        
+        .signup p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .form-group {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        
+        .form-input {
+            flex: 1;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 50px 0 0 50px;
+            font-size: 16px;
+        }
+        
+        .form-btn {
+            border-radius: 0 50px 50px 0;
+            padding: 15px 30px;
+            font-weight: 600;
+            background: var(--dark);
+            border: none;
+        }
+        
+        .form-btn:hover {
+            background: #0f1a2f;
+        }
+        
+        .privacy-note {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        
+        /* Freebies Section */
+        .freebies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .freebie-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s;
+        }
+        
+        .freebie-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .freebie-img {
+            height: 200px;
+            background: var(--light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            color: var(--primary);
+        }
+        
+        .freebie-content {
+            padding: 25px;
+        }
+        
+        .freebie-content h3 {
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+        
+        .freebie-content p {
+            color: var(--gray);
+            margin-bottom: 20px;
+        }
+        
+        .download-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            background: var(--light);
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        
+        .download-btn:hover {
+            background: var(--primary);
+            color: white;
+        }
+        
+        /* Thank You Page */
+        .thank-you {
+            text-align: center;
+            padding: 100px 0;
+        }
+        
+        .thank-you .icon {
+            font-size: 80px;
+            color: var(--success);
+            margin-bottom: 30px;
+        }
+        
+        .thank-you h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+        
+        .thank-you p {
+            font-size: 18px;
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        
+        .credits-badge {
+            background: var(--light);
+            border-radius: 50px;
+            padding: 15px 30px;
+            display: inline-block;
+            margin: 20px 0;
+            font-weight: 700;
+            font-size: 20px;
+            color: var(--primary);
+        }
+        
+        .social-sharing {
+            margin: 40px 0;
+        }
+        
+        .social-sharing h3 {
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: var(--dark);
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .social-icon:hover {
+            transform: translateY(-5px);
+            color: white;
+        }
+        
+        .social-icon.facebook:hover {
+            background: #3b5998;
+        }
+        
+        .social-icon.twitter:hover {
+            background: #1da1f2;
+        }
+        
+        .social-icon.linkedin:hover {
+            background: #0077b5;
+        }
+        
+        .social-icon.whatsapp:hover {
+            background: #25d366;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 60px 0 30px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #a0aec0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #2d3748;
+            color: #a0aec0;
+            font-size: 14px;
+        }
+        
+        /* Cookie Consent */
+        .cookie-consent {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            max-width: 600px;
+            width: 90%;
+            z-index: 1000;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .cookie-text {
+            flex: 1;
+            min-width: 300px;
+            margin-right: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .cookie-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero-content {
+                flex-direction: column;
+            }
+            
+            .hero-text {
+                padding-right: 0;
+                margin-bottom: 50px;
+                text-align: center;
+            }
+            
+            .hero h1 {
+                font-size: 40px;
+            }
+            
+            .hero p {
+                margin: 0 auto 30px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .section {
+                padding: 60px 0;
+            }
+            
+            .signup {
+                padding: 40px 20px;
+            }
+            
+            .form-group {
+                flex-direction: column;
+            }
+            
+            .form-input {
+                border-radius: 50px;
+                margin-bottom: 10px;
+            }
+            
+            .form-btn {
+                border-radius: 50px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 28px;
+            }
+            
+            .section-title h2 {
+                font-size: 28px;
+            }
+            
+            .thank-you h1 {
+                font-size: 32px;
+            }
+            
+            .cookie-consent {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .cookie-text {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            
+            .cookie-buttons {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="cookie-text">
+            <p>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p>
+        </div>
+        <div class="cookie-buttons">
+            <button class="btn" id="acceptCookies">Accept</button>
+            <button class="btn" style="background: #e2e8f0; color: var(--dark);" id="declineCookies">Decline</button>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Refix<span>Lab</span></a>
+                <ul class="nav-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#freebies">Freebies</a></li>
+                    <li><a href="#signup">Sign Up</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Get <span>1800 AI Credits</span> + <span>300 Daily</span> for Free!</h1>
+                    <p>Join RefixLab today and unlock the power of AI. Plus, get instant access to our premium collection of ebooks and audiobooks.</p>
+                    <a href="#signup" class="btn">Claim Your Credits Now</a>
+                </div>
+                <div class="hero-image">
+                    <img src="data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='500' height='400' viewBox='0 0 500 400'%3e%3crect width='500' height='400' fill='%234a6cf7' opacity='0.1'/%3e%3cpath d='M250,100 Q350,50 400,150 T350,300 T250,350 T150,300 T100,150 T150,50 T250,100' fill='none' stroke='%234a6cf7' stroke-width='10'/%3e%3ccircle cx='250' cy='200' r='60' fill='%234a6cf7' opacity='0.5'/%3e%3ctext x='250' y='200' font-family='Arial' font-size='30' fill='white' text-anchor='middle' dominant-baseline='middle'%3eAI%3c/text%3e%3c/svg%3e" alt="AI Technology">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Join RefixLab?</h2>
+                <p>Discover the amazing benefits you get when you sign up for our platform</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Free AI Credits</h3>
+                    <p>Get 1800 credits instantly upon signup and 300 additional credits every day for free.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Premium Freebies</h3>
+                    <p>Access our collection of high-quality ebooks, audiobooks, and resources completely free.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Powerful AI Tools</h3>
+                    <p>Generate content, analyze data, and automate tasks with our cutting-edge AI technology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signup Section -->
+    <section class="signup" id="signup">
+        <div class="container">
+            <div class="signup-content">
+                <h2>Join Our AI Revolution</h2>
+                <p>Enter your email to get started with 1800 AI credits plus 300 daily credits. Plus, access our exclusive freebies immediately!</p>
+                
+                <!-- MailerLite Form Integration -->
+                <form id="emailSignupForm" class="signup-form">
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn form-btn">Get Credits</button>
+                    </div>
+                    <p class="privacy-note">We respect your privacy. Unsubscribe at any time.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Freebies Section -->
+    <section class="section" id="freebies">
+        <div class="container">
+            <div class="section-title">
+                <h2>Premium Freebies</h2>
+                <p>Download these valuable resources after signing up</p>
+            </div>
+            <div class="freebies-grid">
+                <div class="freebie-card">
+                    <div class="freebie-img">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="freebie-content">
+                        <h3>AI Revolution Ebook</h3>
+                        <p>Discover how artificial intelligence is transforming industries and what it means for your business.</p>
+                        <a href="#" class="download-btn">
+                            <i class="fas fa-download"></i> Download Now
+                        </a>
+                    </div>
+                </div>
+                <div class="freebie-card">
+                    <div class="freebie-img">
+                        <i class="fas fa-headphones"></i>
+                    </div>
+                    <div class="freebie-content">
+                        <h3>Future Tech Audiobook</h3>
+                        <p>Listen to expert insights on emerging technologies and how they will shape our future.</p>
+                        <a href="#" class="download-btn">
+                            <i class="fas fa-download"></i> Download Now
+                        </a>
+                    </div>
+                </div>
+                <div class="freebie-card">
+                    <div class="freebie-img">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="freebie-content">
+                        <h3>AI Prompt Guide</h3>
+                        <p>Master the art of prompt engineering with our comprehensive guide and template library.</p>
+                        <a href="#" class="download-btn">
+                            <i class="fas fa-download"></i> Download Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>RefixLab</h3>
+                    <p>Empowering innovation with AI technology and resources for creators, developers, and businesses.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#freebies">Freebies</a></li>
+                        <li><a href="#signup">Sign Up</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 RefixLab. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Thank You Page (hidden by default) -->
+    <div id="thankYouPage" style="display: none;">
+        <section class="thank-you">
+            <div class="container">
+                <div class="icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h1>Thank You for Signing Up!</h1>
+                <p>We've sent a confirmation email to your inbox. Please verify your email address to activate your account and claim your AI credits.</p>
+                
+                <div class="credits-badge">
+                    <i class="fas fa-coins"></i> 1800 AI Credits + 300 Daily
+                </div>
+                
+                <p>While you wait for the confirmation email, you can already access your freebies:</p>
+                <a href="#freebies" class="btn btn-secondary">Access Freebies Now</a>
+                
+                <div class="social-sharing">
+                    <h3>Share the Good News!</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-icon whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Cookie Consent Logic
+        document.addEventListener('DOMContentLoaded', function() {
+            const cookieConsent = document.getElementById('cookieConsent');
+            const acceptCookies = document.getElementById('acceptCookies');
+            const declineCookies = document.getElementById('declineCookies');
+            
+            // Check if user has already made a choice
+            if (!localStorage.getItem('cookieConsent')) {
+                cookieConsent.style.display = 'flex';
+            }
+            
+            // Handle accept button
+            acceptCookies.addEventListener('click', function() {
+                localStorage.setItem('cookieConsent', 'accepted');
+                cookieConsent.style.display = 'none';
+                // Initialize analytics here
+            });
+            
+            // Handle decline button
+            declineCookies.addEventListener('click', function() {
+                localStorage.setItem('cookieConsent', 'declined');
+                cookieConsent.style.display = 'none';
+            });
+            
+            // Form Submission Handling
+            const signupForm = document.getElementById('emailSignupForm');
+            const thankYouPage = document.getElementById('thankYouPage');
+            
+            signupForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // In a real implementation, this would connect to MailerLite API
+                const email = signupForm.querySelector('input[type="email"]').value;
+                
+                // Show success message
+                document.body.innerHTML = thankYouPage.innerHTML;
+                
+                // Scroll to top
+                window.scrollTo(0, 0);
+                
+                // Here you would typically send the data to MailerLite
+                console.log('Email submitted:', email);
+            });
+            
+            // Mobile Menu Toggle
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const navLinks = document.querySelector('.nav-links');
+            
+            mobileMenu.addEventListener('click', function() {
+                navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+            });
+        });
+        
+        // Google Analytics Simulation (would be replaced with actual GA code)
+        console.log('Google Analytics would be loaded here');
+    </script>
+</body>
+</html>
